@@ -1,0 +1,141 @@
+/* Header */
+.main-header {
+    height: var(--header-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    backdrop-filter: blur(12px);
+    background: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    letter-spacing: -0.025em;
+    z-index: 51;
+    /* Ensure logo stays above mobile menu if overlay */
+}
+
+.main-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-fast);
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    border-radius: var(--radius-full);
+}
+
+.mobile-menu-btn {
+    display: none;
+    /* Hidden on desktop */
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 51;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background: var(--bg-main);
+        flex-direction: column;
+        justify-content: flex-start;
+        /* Align to top */
+        padding: 6rem 2rem 2rem;
+        /* Top padding to clear header */
+        gap: 1.5rem;
+        /* Reduced gap based on feedback */
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.3s ease-in-out;
+        z-index: 50;
+    }
+
+    .main-nav.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-actions {
+        margin-top: 1.5rem;
+        /* Reduced margin */
+        width: 100%;
+        justify-content: center;
+        border-top: 1px solid var(--border-color);
+        padding-top: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1.25rem;
+        /* Reduced font size based on feedback */
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        padding: 0.25rem 0;
+        /* Reduced padding */
+    }
+
+    .nav-link.active::after {
+        bottom: -2px;
+        width: 40px;
+        /* Smaller underline */
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+    }
+}
