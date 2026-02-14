@@ -4,6 +4,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
     plugins: [react()],
+    base: '/PortafolioV2/', // Base URL for GitHub Pages
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
