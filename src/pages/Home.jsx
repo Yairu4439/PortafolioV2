@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRightIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from 'react-i18next';
+import ThemeLogo from '@/components/ThemeLogo';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -15,6 +16,9 @@ const Home = () => {
 
             <section className="section hero-section container">
                 <div className="hero-content">
+                    <div className="hero-logo-container">
+                        <ThemeLogo className="hero-logo" alt="Logo" />
+                    </div>
                     <h1 className="hero-title">
                         {t('Hero Title Plain')} <br />
                         <span className='text-primary-gradient'>{t('Hero Title Highlight')}</span>
