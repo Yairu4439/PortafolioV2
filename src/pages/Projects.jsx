@@ -9,8 +9,8 @@ const projects = [
         title: 'Code Comparator',
         description: 'Herramienta interactiva para visualizar diferencias entre archivos de código. Desarrollada con React y algoritmos de diff.',
         tags: ['React', 'Algorithms', 'Utility'],
-        demoLink: '#', // TODO: Update when Code Comparator is deployed as standalone
-        repoLink: 'https://github.com/YahirDev21/code-comparator',
+        demoLink: 'https://Yairu4439.github.io/CodeComparator/',
+        repoLink: 'https://github.com/Yairu4439/CodeComparator',
         isExternal: true,
         transKey: 'Code Comparator'
     },
