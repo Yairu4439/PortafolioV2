@@ -22,13 +22,20 @@
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-primary);
     text-decoration: none;
     letter-spacing: -0.025em;
     z-index: 51;
-    /* Ensure logo stays above mobile menu if overlay */
+}
+
+.logo-img {
+    height: 2rem;
+    width: auto;
 }
 
 .main-nav {
@@ -64,7 +71,6 @@
 
 .mobile-menu-btn {
     display: none;
-    /* Hidden on desktop */
     background: none;
     border: none;
     color: var(--text-primary);
@@ -79,6 +85,19 @@
     gap: 1rem;
 }
 
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 769px) {
+    .main-nav {
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .mobile-menu-btn {
         display: block;
@@ -90,19 +109,18 @@
         left: 0;
         right: 0;
         height: 100vh;
-        background: var(--bg-main);
+        /* background: var(--bg-main); */
         flex-direction: column;
         justify-content: flex-start;
-        /* Align to top */
-        padding: 6rem 2rem 2rem;
-        /* Top padding to clear header */
-        gap: 1.5rem;
-        /* Reduced gap based on feedback */
+        padding: 5rem 1rem 1rem;
+        gap: 1rem;
         visibility: hidden;
         opacity: 0;
         transform: translateY(-20px);
         transition: all 0.3s ease-in-out;
         z-index: 50;
+        background: var(--bg-header);
+        border-top: 1px solid var(--border-color);
     }
 
     .main-nav.open {
@@ -111,29 +129,18 @@
         transform: translateY(0);
     }
 
-    .nav-actions {
-        margin-top: 1.5rem;
-        /* Reduced margin */
-        width: 100%;
-        justify-content: center;
-        border-top: 1px solid var(--border-color);
-        padding-top: 1.5rem;
-    }
 
     .nav-link {
-        font-size: 1.25rem;
-        /* Reduced font size based on feedback */
+        font-size: 1rem;
         width: 100%;
         text-align: center;
         font-weight: 600;
         padding: 0.25rem 0;
-        /* Reduced padding */
     }
 
     .nav-link.active::after {
         bottom: -2px;
         width: 40px;
-        /* Smaller underline */
         left: 50%;
         transform: translateX(-50%);
         height: 2px;

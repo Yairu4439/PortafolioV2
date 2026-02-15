@@ -11,6 +11,17 @@
     position: relative;
 }
 
+.hero-logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.hero-logo {
+    height: 18rem;
+    width: auto;
+}
+
 .hero-title {
     font-size: 4.5rem;
     font-weight: 700;
@@ -64,6 +75,10 @@
         font-size: 0.95rem;
         /* Reduced from 1rem */
         margin-bottom: 1.5rem;
+    }
+
+    .hero-logo {
+        height: 11rem;
     }
 
     .hero-content {

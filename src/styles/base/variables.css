@@ -70,7 +70,7 @@
 [data-theme="dark"] {
     --bg-main: var(--navy-900);
     --bg-card: rgba(9, 17, 29, 0.6);
-    --bg-header: rgba(9, 17, 29, 0.7);
+    --bg-header: rgba(0, 0, 0, 0.8);
 
     --text-primary: #E6E8EB;
     --text-secondary: var(--gray-300);

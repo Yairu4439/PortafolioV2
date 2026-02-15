@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { HomeIcon, UserIcon, BriefcaseIcon, EnvelopeIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { HomeIcon, UserIcon, BriefcaseIcon, EnvelopeIcon, Bars3Icon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import ThemeToggle from '@/components/ThemeToggle';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import { ThemeProvider } from '@/contexts/ThemeContext';
+import ThemeLogo from '@/components/ThemeLogo';
 
 export default function Layout() {
     const location = useLocation();
@@ -24,19 +25,10 @@ export default function Layout() {
                 <ParticlesBackground />
                 <header className="main-header">
                     <div className="container header-content">
-                        <NavLink to="/" className="logo" onClick={closeMenu}>Portafolio</NavLink>
-
-                        <button
-                            className="mobile-menu-btn"
-                            onClick={toggleMenu}
-                            aria-label="Toggle menu"
-                        >
-                            {isMenuOpen ? (
-                                <XMarkIcon className="icon-sm" />
-                            ) : (
-                                <Bars3Icon className="icon-sm" />
-                            )}
-                        </button>
+                        <NavLink to="/" className="logo" onClick={closeMenu}>
+                            <ThemeLogo className="logo-img" alt="" />
+                            Portafolio
+                        </NavLink>
 
                         <nav className={`main-nav items-center ${isMenuOpen ? 'open' : ''}`}>
                             <NavLink to="/" className={navLinkClass} end onClick={closeMenu}>
@@ -55,11 +47,25 @@ export default function Layout() {
                                 <EnvelopeIcon className="icon-xs" />
                                 {t('Contact')}
                             </NavLink>
+                        </nav>
+
+                        <div className="header-controls">
                             <div className="nav-actions">
                                 <LanguageSwitcher />
                                 <ThemeToggle />
                             </div>
-                        </nav>
+                            <button
+                                className="mobile-menu-btn"
+                                onClick={toggleMenu}
+                                aria-label="Toggle menu"
+                            >
+                                {isMenuOpen ? (
+                                    <ArrowRightOnRectangleIcon className="icon-sm" />
+                                ) : (
+                                    <Bars3Icon className="icon-sm" />
+                                )}
+                            </button>
+                        </div>
                     </div>
                 </header>
 

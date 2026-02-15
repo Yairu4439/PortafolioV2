@@ -2,8 +2,8 @@
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    padding: 3rem 0;
+    gap: 2rem;
+    /* padding: 3rem 0; */
 }
 
 .form-group {

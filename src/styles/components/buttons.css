@@ -45,8 +45,5 @@
 @media (max-width: 768px) {
     .btn {
         width: 100%;
-        /* Full width buttons for better touch targets on mobile */
-        padding: 0.875rem 1.5rem;
-        /* Slightly larger vertical padding */
     }
 }
