@@ -72,5 +72,13 @@
     "ir_remote_desc": "Universal remote control for RGB LED strips via infrared. Native Android 100% Kotlin, ad-free and MVVM architecture.",
     "code_comparator_desc": "Interactive tool to visualize differences between code files. Built with React and diff algorithms.",
     "Download APK": "Download APK",
-    "IR Remote RGB": "IR Remote RGB"
+    "IR Remote RGB": "IR Remote RGB",
+    "404 Greeting": "Hi, I'm Yahir Umaña Arroyo, creator of this portfolio.",
+    "404 Explanation": "If you see this, the URL might be correct but GitHub Pages could not resolve the direct route (due to the App's SPA nature).",
+    "404 Solutions Title": "Technical Details & Chosen Solution",
+    "404 Solution 1": "<strong>Implemented Solution (SPA Fallback):</strong> I configured the server to intercept unknown routes and let React handle dynamic navigation. This is the best choice to keep the project **100% hosted on GitHub Pages (free)** and centralized, without sacrificing clean URL aesthetics.",
+    "404 Solution 2": "<strong>Discarded Alternatives:</strong> Services like Vercel handle this natively but add external dependencies. Using <code>HashRouter (#)</code> would be easier but makes URLs look less professional.",
+    "404 Action": "Please try returning to the home page to reload the application correctly.",
+    "404 Generic Title": "This page does not exist",
+    "404 Generic Message": "The route you are trying to visit is not part of this portfolio. Please check that the URL is spelled correctly."
 }

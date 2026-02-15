@@ -10,6 +10,7 @@
 
 /* 3. Pages */
 @import 'pages/hero.css';
+@import 'pages/not-found.css';
 
 /* 4. Components */
 @import 'components/buttons.css';
