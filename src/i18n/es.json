@@ -68,5 +68,9 @@
     "UNA Issuer": "Universidad Nacional (UNA)",
     "Web Development": "Desarrollo Web",
     "Mobile & Tools": "Móvil & Herramientas",
-    "Years": "Años"
+    "Years": "Años",
+    "ir_remote_desc": "Control remoto universal para tiras LED RGB mediante infrarrojos. Nativo Android 100% Kotlin, sin anuncios y arquitectura MVVM.",
+    "code_comparator_desc": "Herramienta interactiva para visualizar diferencias entre archivos de código. Desarrollada con React y algoritmos de diff.",
+    "Download APK": "Descargar APK",
+    "IR Remote RGB": "IR Remote RGB"
 }

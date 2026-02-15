@@ -68,5 +68,9 @@
     "UNA Issuer": "National University (UNA)",
     "Web Development": "Web Development",
     "Mobile & Tools": "Mobile & Tools",
-    "Years": "Years"
+    "Years": "Years",
+    "ir_remote_desc": "Universal remote control for RGB LED strips via infrared. Native Android 100% Kotlin, ad-free and MVVM architecture.",
+    "code_comparator_desc": "Interactive tool to visualize differences between code files. Built with React and diff algorithms.",
+    "Download APK": "Download APK",
+    "IR Remote RGB": "IR Remote RGB"
 }
