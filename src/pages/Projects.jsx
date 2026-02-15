@@ -20,7 +20,7 @@ const projects = [
         title: 'IR Remote RGB',
         description: 'ir_remote_desc',
         tags: ['Android', 'Kotlin', 'MVVM', 'Native'],
-        demoLink: '/downloads/IRREMOTERGB.apk',
+        demoLink: `${import.meta.env.BASE_URL}downloads/IRREMOTERGB.apk`,
         repoLink: 'https://github.com/Yairu4439/IRREMOTERGB',
         isAPK: true,
         logo: irLogo,
