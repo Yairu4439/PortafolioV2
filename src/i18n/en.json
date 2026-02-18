@@ -80,5 +80,7 @@
     "404 Solution 2": "<strong>Discarded Alternatives:</strong> Services like Vercel handle this natively but add external dependencies. Using <code>HashRouter (#)</code> would be easier but makes URLs look less professional.",
     "404 Action": "Please try returning to the home page to reload the application correctly.",
     "404 Generic Title": "This page does not exist",
-    "404 Generic Message": "The route you are trying to visit is not part of this portfolio. Please check that the URL is spelled correctly."
+    "404 Generic Message": "The route you are trying to visit is not part of this portfolio. Please check that the URL is spelled correctly.",
+    "image_tools_desc": "100% in-browser image editing tool. Remove background (AI), crop, and resize without uploading files to a server.",
+    "ImageTools": "ImageTools"
 }
