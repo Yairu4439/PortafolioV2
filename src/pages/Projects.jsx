@@ -26,7 +26,16 @@ const projects = [
         logo: irLogo,
         transKey: 'IR Remote RGB'
     },
-    // Future projects will be added here
+    {
+        id: 3,
+        title: 'ImageTools',
+        description: 'image_tools_desc',
+        tags: ['React', 'Vite', 'Canvas', 'AI'],
+        demoLink: 'https://Yairu4439.github.io/ImageTools/',
+        repoLink: 'https://github.com/Yairu4439/ImageTools',
+        isExternal: true,
+        transKey: 'ImageTools'
+    },
 ];
 
 const Projects = () => {

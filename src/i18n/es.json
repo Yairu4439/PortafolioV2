@@ -80,5 +80,7 @@
     "404 Solution 2": "<strong>Alternativas Descartadas:</strong> Servicios como Vercel manejan esto nativamente pero añaden dependencias externas. Usar <code>HashRouter (#)</code> sería fácil pero las URLs pierden profesionalismo.",
     "404 Action": "Por favor, intenta volver al inicio para recargar la aplicación correctamente.",
     "404 Generic Title": "Esta página no existe",
-    "404 Generic Message": "La ruta que intentas visitar no forma parte de este portafolio. Verifica que la URL esté escrita correctamente."
+    "404 Generic Message": "La ruta que intentas visitar no forma parte de este portafolio. Verifica que la URL esté escrita correctamente.",
+    "image_tools_desc": "Herramienta de edición de imágenes 100% en el navegador. Eliminar fondo (IA), recortar y redimensionar sin subir archivos a un servidor.",
+    "ImageTools": "ImageTools"
 }
